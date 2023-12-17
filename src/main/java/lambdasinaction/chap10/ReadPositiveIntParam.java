@@ -1,10 +1,13 @@
 package lambdasinaction.chap10;
 
-import org.junit.*;
+import org.junit.Test;
 
-import java.util.*;
+import java.util.Optional;
+import java.util.Properties;
 
-import static java.util.Optional.*;
+import static java.util.Optional.empty;
+import static java.util.Optional.of;
+import static java.util.Optional.ofNullable;
 import static org.junit.Assert.assertEquals;
 
 public class ReadPositiveIntParam {
@@ -35,7 +38,8 @@ public class ReadPositiveIntParam {
                 if (i > 0) {
                     return i;
                 }
-            } catch (NumberFormatException nfe) { }
+            } catch (NumberFormatException nfe) {
+            }
         }
         return 0;
     }

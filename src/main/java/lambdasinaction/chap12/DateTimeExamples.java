@@ -1,8 +1,5 @@
 package lambdasinaction.chap12;
 
-import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
-import static java.time.temporal.TemporalAdjusters.nextOrSame;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
@@ -22,6 +19,9 @@ import java.time.temporal.TemporalAdjuster;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+
+import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
+import static java.time.temporal.TemporalAdjusters.nextOrSame;
 
 public class DateTimeExamples {
 
